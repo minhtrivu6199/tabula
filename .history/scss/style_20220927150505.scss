@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    .navbar{
+        .container {
+            justify-content: space-between;
+            .header-left {
+                .logo {
+                    img {
+                        width: 80px;
+                        display: block;
+                    }
+                }
+            }
+
+            .header-right {
+                display: flex;
+                justify-content: space-between;
+                .header-menu {
+                    .menu {
+                        .nav-items {
+                            .nav-link {
+
+                            }
+                        }
+                    }
+                }
+
+                .header-right-inner {
+                    .header-btn {
+
+                    }
+
+                    .iconWidget {
+
+                    }
+                }
+            }
+        }
+    }
+}

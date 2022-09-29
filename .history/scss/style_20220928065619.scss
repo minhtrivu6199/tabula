@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header {
+    position:absolute;
+    width: 100%;
+    z-index: 1;
+    .navbar{
+        .container {
+            height: 80px;
+            justify-content: space-between;
+            .header-left {
+                height: 100%;
+                .logo {
+                    img {
+                        width: 80px;
+                        display: block;
+                    }
+                }
+            }
+
+            .header-right {
+                display: flex;
+                justify-content: space-between;
+                .header-menu {
+                    .menu {
+                        .nav-item {
+                            display: block;
+                            padding: 0 50px 0 0;
+                            .nav-link {
+                                font-weight: 600;
+                                color: #000;
+                                line-height: 80px;
+                                display: block;
+                                position: relative;
+                                padding: 0;
+                                font-size: 13px;
+                                &:hover {
+                                    color: #b61984;
+                                }
+                                &::after {
+                                    content: '';
+                                    display: block;
+                                    position:absolute;
+                                    bottom: -4px;
+                                    margin-left: -4px;
+                                    left: 50%;
+                                    height: 8px;
+                                    width: 8px;
+                                    border-radius: 50%;
+                                    transition: all 0.3s ease;
+                                    transform: scale(0);
+                                    background-color: #b61984;
+                                }
+                                &:hover::after{
+                                    transform: scale(1.1);
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .header-right-inner {
+                    display: flex;
+                    line-height: 38px;
+                    align-items: center;
+                    vertical-align: middle;
+                    font-size: 16px;
+                    .header-btn {
+                        display: inline-block;
+                        line-height: 1;
+                        width: auto;
+                        .btn-default {
+                            color: #fff;
+                            padding: 12px 18px;
+                            margin: 6px;
+                            font-weight: 500;
+                            text-align: center;
+                            background: transparent;
+                            box-shadow: 0 0 0 36px #b61984 inset;
+                            transition: all 0.3s ease;
+                            border-radius: 50px;
+                            font-size: 13px;
+                            &:hover {
+                                color: #b61984;
+                                box-shadow: 0 0 0 1px #b61984 inset;
+                            }
+                        }
+                    }
+
+                    .iconWidget {
+                        margin-left: 12px;
+                        color: #000;
+                        font-size: 13px;
+                        transition: all 0.3s ease;
+                        &:hover {
+                            color: #b61984;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contentWrap {
+    .contentHolder{
+        .contentPort {
+            .cell {
+                .cell-inner {
+                    .row {
+                        position: relative;
+                        flex-flow: row nowrap;
+                        justify-content: center;
+                        padding: 60px 0;
+                        align-items: center;
+                        flex-basis: 50%;
+                        max-width: 70%;
+                        margin: 0 auto;
+                        .col-6 {
+                            .col-content {
+                                justify-content: center;
+                                .subtitle {
+
+                                }
+
+                                .title {
+
+                                }
+
+                                .col-thumb {
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .top-img {
+            top: 0;
+            right: 0;
+            left: 0;
+            position:absolute;
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
+            }
+        }
+
+        .bottom-img {
+            .img {
+
+            }
+        }
+    }
+}
